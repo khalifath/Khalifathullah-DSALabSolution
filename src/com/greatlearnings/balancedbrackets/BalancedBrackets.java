@@ -1,9 +1,9 @@
-package com.grearlearnings.balancedbracket;
+package com.greatlearnings.balancedbrackets;
 
 import java.util.Stack;
 import java.util.Scanner;
 
-public class BalancedBracket {
+public class BalancedBrackets {
 
 
 	public static boolean isBalancedBracket(String inputStr) {
