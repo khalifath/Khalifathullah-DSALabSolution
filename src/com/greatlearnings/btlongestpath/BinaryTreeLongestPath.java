@@ -66,6 +66,6 @@ class BinaryTreeLongestPath {
 			else
 				System.out.print(" -> " + ll_longpath.get(i));
 		}
-		//ll_longpath.clear();
+		ll_longpath.clear();
 	}
 }
