@@ -21,20 +21,23 @@ public class BalancedBrackets {
 				continue;
 			} 
 			
-			
-			if(chr == ']') {
-				if(stack.pop() != '[') 	
-					return false;
-
-			} else if(chr == ')') {
-				if(stack.pop() != '(') 	
-					return false;
-
-			} else if(chr == '}') {
-				if(stack.pop() != '{') 	
-					return false;
+			if(!stack.isEmpty()) {
+				if(chr == ']') {
+					if(stack.pop() != '[') 	
+						return false;
+	
+				} else if(chr == ')') {
+					if(stack.pop() != '(') 	
+						return false;
+	
+				} else if(chr == '}') {
+					if(stack.pop() != '{') 	
+						return false;
+				}
 			}
-
+			else if(stack.isEmpty() && (chr == '}' || chr == ')' || chr == ']')) {
+				return false;
+			}
 			i++;
 		}
 		
