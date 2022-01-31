@@ -20,16 +20,16 @@ public class BalancedBrackets {
 				i++;
 				continue;
 			} 
-			
+
 			if(!stack.isEmpty()) {
 				if(chr == ']') {
 					if(stack.pop() != '[') 	
 						return false;
-	
+
 				} else if(chr == ')') {
 					if(stack.pop() != '(') 	
 						return false;
-	
+
 				} else if(chr == '}') {
 					if(stack.pop() != '{') 	
 						return false;
@@ -40,7 +40,7 @@ public class BalancedBrackets {
 			}
 			i++;
 		}
-		
+
 		return stack.isEmpty();
 	}
 
